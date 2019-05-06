@@ -1,0 +1,104 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: ". . ." ". type ." ". searchbar ." ". . ." ". conversions  ." ". . .";
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 10vh 5vh 10vh 5vh 60vh 10vh;
+    grid-auto-flow: column;
+    background-image: linear-gradient(-45deg, #ffffff, #fefefe);
+    ;
+}
+
+#type {
+    display: grid;
+    grid-auto-flow: column;
+    grid-area: type;
+}
+
+.type--container {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+
+.type--container:first-child {
+    border-right: 0;
+    border-left: 1px solid #e2e2e2;
+}
+
+.type--container:last-child {
+    border-left: 0;
+    border-right: 1px solid #e2e2e2;
+}
+
+#searchbar {
+    grid-area: searchbar;
+    display: grid;
+    grid-template-areas: "input unit";
+    grid-template-columns: 8fr 2fr;
+    border: 1px solid #e2e2e2;
+    /*box-shadow: 0px 1px 2px 1px #ededed;*/
+}
+
+#input {
+    grid-area: input;
+    border: 0;
+    border-right: 1px solid #e2e2e2;
+}
+
+#unit {
+    grid-area: unit;
+    background-color: #eee;
+}
+
+#unit-selection {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+#unit-selection>option {
+    height: 32px;
+}
+
+#conversions {
+    grid-area: conversions;
+    border: 1px solid #e2e2e2;
+    display: grid;
+    grid-auto-flow: column;
+    /*box-shadow: 0px 1px 2px 1px #ededed;*/
+}
+
+.conversions-table {
+    display: grid;
+    grid-template-areas: "header" "body";
+    grid-template-rows: 10vh auto;
+}
+
+.conversions-table--header {
+    grid-area: header;
+    height: 10vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.conversions-table--body {
+    grid-area: body;
+    display: grid;
+}
+
+.conversions-table--unit {
+    align-self: center;
+}

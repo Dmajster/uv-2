@@ -1,0 +1,185 @@
+{
+    "Distance": {
+        "SI": {
+            "Meter": {
+                "unit": "m",
+                "base": "Meter",
+                "quantity": 1
+            },
+            "Millimeter": {
+                "unit": "mm",
+                "base": "Meter",
+                "quantity": 0.001
+            },
+            "Centimeter": {
+                "unit": "cm",
+                "base": "Meter",
+                "quantity": 0.01
+            },
+            "Decimeter": {
+                "unit": "dm",
+                "base": "Meter",
+                "quantity": 0.1
+            },
+            "Kilometer": {
+                "unit": "km",
+                "base": "Meter",
+                "quantity": 1000
+            }
+        },
+        "Imperial/US": {
+            "Thou": {
+                "unit": "thou",
+                "base": "Inch",
+                "quantity": 0.001
+            },
+            "Line": {
+                "unit": "‴",
+                "base": "Inch",
+                "quantity": 0.0833333333
+            },
+            "Inch": {
+                "unit": "″",
+                "base": "Meter",
+                "quantity": 0.0254
+            },
+            "Foot": {
+                "unit": "′",
+                "base": "Inch",
+                "quantity": 12
+            },
+            "Yard": {
+                "unit": "yd",
+                "base": "Foot",
+                "quantity": 3
+            },
+            "Mile": {
+                "unit": "mi",
+                "base": "Foot",
+                "quantity": 5280
+            },
+            "League": {
+                "unit": "l",
+                "base": "Mile",
+                "quantity": 3.45234
+            }
+        }
+    },
+    "Area": {
+        "SI": {
+            "Square Meter": {
+                "unit": "m^2",
+                "base": "Square Meter",
+                "quantity": 1
+            },
+            "Square Millimeter": {
+                "unit": "mm^2",
+                "base": "Square Meter",
+                "quantity": 1e-6
+            },
+            "Square Centimeter": {
+                "unit": "cm^2",
+                "base": "Square Meter",
+                "quantity": 0.0001
+            },
+            "Square Decimeter": {
+                "unit": "dm^2",
+                "base": "Square Meter",
+                "quantity": 0.01
+            },
+            "Square Kilometer": {
+                "unit": "km^2",
+                "base": "Square Meter",
+                "quantity": 1000000
+            }
+        },
+        "Imperial/US": {
+            "Square Inch": {
+                "unit": "″^2",
+                "base": "Square Meter",
+                "quantity": 0.00064516
+            },
+            "Square Foot": {
+                "unit": "′^2",
+                "base": "Square Inch",
+                "quantity": 144
+            },
+            "Square Yard": {
+                "unit": "yd^2",
+                "base": "Square Foot",
+                "quantity": 9
+            },
+            "Acre": {
+                "unit": "ac^2",
+                "base": "Square Yard",
+                "quantity": 4840
+            },
+            "Square Mile": {
+                "unit": "mi^2",
+                "base": "Acre",
+                "quantity": 640
+            }
+        }
+    },
+    "Volume": {
+        "SI": {
+            "Cubic Meter": {
+                "unit": "m^3",
+                "base": "Cubic Meter",
+                "quantity": 1
+            },
+            "Cubic Millimeter": {
+                "unit": "mm^3",
+                "base": "Cubic Meter",
+                "quantity": 1e-9
+            },
+            "Cubic Centimeter": {
+                "unit": "cm^3",
+                "base": "Cubic Meter",
+                "quantity": 1e-6
+            },
+            "Cubic Decimeter": {
+                "unit": "dm^3",
+                "base": "Cubic Meter",
+                "quantity": 0.001
+            },
+            "Cubic Kilometer": {
+                "unit": "km^3",
+                "base": "Cubic Meter",
+                "quantity": 1e+9
+            }
+        },
+        "Imperial/US": {
+            "Cubic Inch": {
+                "unit": "″^3",
+                "base": "Cubic Meter",
+                "quantity": 1.63871e-5
+            },
+            "Cubic Foot": {
+                "unit": "′^3",
+                "base": "Cubic Inch",
+                "quantity": 1728
+            },
+            "Cubic Yard": {
+                "unit": "yd^3",
+                "base": "Cubic Foot",
+                "quantity": 27
+            },
+            "Acre-foot": {
+                "unit": "ac ft",
+                "base": "Cubic Yard",
+                "quantity": 43560
+            },
+            "Board-foot": {
+                "unit": "bd ft",
+                "base": "Cubic Inch",
+                "quantity": 144
+            },
+            "Cord": {
+                "unit": "cd",
+                "base": "Cubic Foot",
+                "quantity": 128
+            }
+        }
+    }
+}
