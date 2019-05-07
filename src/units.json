@@ -34,7 +34,7 @@
                 "quantity": 0.001
             },
             "Line": {
-                "unit": "‴",
+                "unit": "'''",
                 "base": "Inch",
                 "quantity": 0.0833333333
             },

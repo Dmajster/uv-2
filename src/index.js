@@ -97,10 +97,21 @@ function loadConversions(type) {
             let text = unit + ": ";
 
             if (inputNumber != 0) {
-                let conversion = Converter.convert(inputType, inputUnit, inputNumber, unit).toFixed(5);
+                let conversion = Converter.convert(inputType, inputUnit, inputNumber, unit)
                 conversion = parseFloat(conversion);
+                conversion = parseFloat(conversion.toFixed(8));
+                if(("" + conversion).length > 10){
+                    
+                    conversion = conversion.toExponential(5);
+                }
+
                 text += conversion;
             }
+
+            let unitObject = Converter.getUnit(inputType, unit);
+            let baseUnitObject = Converter.getUnit(inputType, unitObject["base"]);
+            let tutorial = "\n1" + unitObject["unit"] + " = " + unitObject["quantity"] + baseUnitObject["unit"];
+            text += tutorial
 
             unitValue.innerText = text;
             unitValue.classList.add("conversions-table--unit");
