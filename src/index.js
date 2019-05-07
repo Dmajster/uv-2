@@ -34,20 +34,6 @@ function loadTypes() {
             activeTypeDOM.setAttribute('active', true);
             onTypeChange(event)
         });
-        /*
-        let type = document.createElement("input");
-        type.setAttribute('type', 'radio');
-        type.setAttribute('name', 'type');
-        type.text = types;
-        type.value = types;
-        type.classList.add("type--container-radio");
-        
-
-
-        type.addEventListener('input', event => onTypeChange(event));
-
-        container.appendChild(type);
-        */
         typesDOM.appendChild(container);
     }
     typeDOM = document.getElementsByName("type")
@@ -56,22 +42,15 @@ function loadTypes() {
 }
 
 function onTypeChange(event) {
-    console.log("da?")
     inputType = getActiveTypeName();
 
-    inputDOM.value = "";
-
-    console.log("it:", inputType);
+    //inputDOM.value = "";
+    //inputNumber = 0;ž
     let unitSystem = Object.keys(units[inputType])[0];
-    console.log("us:", unitSystem)
     inputUnit = Object.keys(units[inputType][unitSystem])[0];
-
-
-    console.log("iu:", inputUnit);
 
     loadConversions(inputType);
     loadUnits(inputType);
-
 }
 
 function getActiveTypeName() {

@@ -12,7 +12,7 @@ html {
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 10vh 5vh 10vh 5vh 60vh 10vh;
     grid-auto-flow: column;
-    background-image: linear-gradient(-45deg, #ffffff, #fefefe);
+    background-image: linear-gradient(-45deg, #fcfcfc, #fbfbfb);
     ;
 }
 
@@ -20,6 +20,10 @@ html {
     display: grid;
     grid-auto-flow: column;
     grid-area: type;
+
+    background-color: white;
+    box-shadow: 0px 1px 2px 1px #ededed;
+    font-size: 18px;
 }
 
 .type--container {
@@ -29,7 +33,15 @@ html {
     border-top: 1px solid #e2e2e2;
     border-left: 1px solid #e2e2e2;
     border-right: 1px solid #e2e2e2;
+    font-weight: 600;
 }
+
+.type--container:hover{
+    z-index: 1;
+    background-color: #ececec;
+    box-shadow: inset 0px 1px 2px 1px #ededed;
+}
+
 
 .type--container:first-child {
     border-right: 0;
@@ -47,13 +59,17 @@ html {
     grid-template-areas: "input unit";
     grid-template-columns: 8fr 2fr;
     border: 1px solid #e2e2e2;
-    /*box-shadow: 0px 1px 2px 1px #ededed;*/
+
+    background-color: white;
+    box-shadow: 0px 1px 2px 1px #ededed;
 }
 
 #input {
     grid-area: input;
     border: 0;
     border-right: 1px solid #e2e2e2;
+    font-size: 18px;
+    padding-left:20px; 
 }
 
 #unit {
@@ -64,6 +80,7 @@ html {
 #unit-selection {
     height: 100%;
     width: 100%;
+    font-size: 17px;
     border: none;
 }
 
@@ -76,13 +93,22 @@ html {
     border: 1px solid #e2e2e2;
     display: grid;
     grid-auto-flow: column;
-    /*box-shadow: 0px 1px 2px 1px #ededed;*/
+
+    font-size: 18px; 
+
+    background-color: white;
+    box-shadow: 0px 1px 2px 1px #ededed;
 }
 
 .conversions-table {
     display: grid;
     grid-template-areas: "header" "body";
     grid-template-rows: 10vh auto;
+    border-right: 1px solid #e2e2e2;
+}
+
+.conversions-table:last-child {
+    border-right: 0;
 }
 
 .conversions-table--header {
@@ -92,6 +118,7 @@ html {
     align-content: center;
     justify-content: center;
     border-bottom: 1px solid #e2e2e2;
+    font-weight: 600;
 }
 
 .conversions-table--body {
@@ -99,6 +126,9 @@ html {
     display: grid;
 }
 
+
+
 .conversions-table--unit {
+    padding-left: 20px;
     align-self: center;
 }
