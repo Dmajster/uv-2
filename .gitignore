@@ -1,1 +1,25 @@
 node_modules/*
+
+,
+        "US Troy ": {
+            "Grain": {
+                "unit": "gr",
+                "base": "Pound",
+                "quantity": 0.00014285714285
+            },
+            "Pennyweight": {
+                "unit": "dwt",
+                "base": "Grain",
+                "quantity": 24
+            },
+            "Troy Ounce": {
+                "unit": "oz t",
+                "base": "Pennyweight",
+                "quantity": 20
+            },
+            "Troy Pound": {
+                "unit": "ib t",
+                "base": "Troy Ounce",
+                "quantity": 12
+            }
+        }

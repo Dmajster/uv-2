@@ -181,5 +181,103 @@
                 "quantity": 128
             }
         }
+    },
+    "Weight": {
+        "SI": {
+            "Milligram": {
+                "unit": "mg",
+                "base": "Gram",
+                "quantity": 0.001
+            },
+            "Centigram": {
+                "unit": "cg",
+                "base": "Gram",
+                "quantity": 0.01
+            },
+            "Decigram": {
+                "unit": "dg",
+                "base": "Gram",
+                "quantity": 0.1
+            },
+            "Gram": {
+                "unit": "g",
+                "base": "Gram",
+                "quantity": 1
+            },
+            "Dekagram": {
+                "unit": "dag",
+                "base": "Gram",
+                "quantity": 10
+            },
+            "Hectogram": {
+                "unit": "hg",
+                "base": "Gram",
+                "quantity": 100
+            },
+            "Kilogram": {
+                "unit": "kg",
+                "base": "Gram",
+                "quantity": 100
+            },
+            "Metric ton": {
+                "unit": "t",
+                "base": "Gram",
+                "quantity": 1000
+            }
+        },
+        "US Avoirdupois": {
+            "Grain": {
+                "unit": "gr",
+                "base": "Pound",
+                "quantity": 0.00014285714285
+            },
+            "Dram": {
+                "unit": "dr",
+                "base": "Grain",
+                "quantity": 27.34375
+            },
+            "Ounce": {
+                "unit": "oz",
+                "base": "Dram",
+                "quantity": 16
+            },
+            "Pound": {
+                "unit": "ib",
+                "base": "Gram",
+                "quantity":453.59237
+            },
+            "Hundredweight": {
+                "unit": "cwt",
+                "base": "Pound",
+                "quantity": 100
+            },
+            "Ton": {
+                "unit": "t",
+                "base": "Hundredweight",
+                "quantity": 20
+            }
+        },
+        "US Troy ": {
+            "Grain": {
+                "unit": "gr",
+                "base": "Pound",
+                "quantity": 0.00014285714285
+            },
+            "Pennyweight": {
+                "unit": "dwt",
+                "base": "Grain",
+                "quantity": 24
+            },
+            "Troy Ounce": {
+                "unit": "oz t",
+                "base": "Pennyweight",
+                "quantity": 20
+            },
+            "Troy Pound": {
+                "unit": "ib t",
+                "base": "Troy Ounce",
+                "quantity": 12
+            }
+        }
     }
 }
